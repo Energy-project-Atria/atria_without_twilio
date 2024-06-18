@@ -1,0 +1,188 @@
+/* src/Login.css */
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.login-form {
+  position: relative;
+  width: 300px; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  background: rgba(255, 255, 255, 0.9); /* Adjust transparency */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align contents to the top */
+  align-items: center; /* Center contents horizontally */
+}
+
+.login-step {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align contents to the top */
+}
+
+.login-step h2 {
+  margin-top: 20px; /* Reduce margin from the top */
+  margin-bottom: 20px;
+  font-size: 27px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.login-step p {
+  margin-top: 60px; /* Reduce margin from the top */
+  margin-bottom: 0px;
+  font-size: 16px; /* Increase the font size */
+  font-weight: normal; /* Remove bold text */
+}
+
+.login-step input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 40px; /* Reduce margin from the top */
+  margin-bottom: 0px;
+}
+
+.login-step button.confirm-button, .login-step button {
+  width: 90%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px; /* Adjust margin from the top */
+  margin-bottom: 0px;
+}
+
+.login-step button:hover {
+  background: #0056b3;
+}
+
+.privacy-policy-button {
+  margin-top: 15px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+
+.privacy-policy-button:hover {
+  color: #0056b3;
+}
+
+.privacy-policy-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.privacy-policy-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.privacy-policy-content h2 {
+  margin-bottom: 20px;
+}
+
+.privacy-policy-content p {
+  margin-bottom: 20px;
+}
+
+.privacy-policy-content button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.privacy-policy-content button:hover {
+  background: #0056b3;
+}
+
+.resend-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 15px; /* Adjust margin from the top */
+  margin-bottom: 15px; /* Adjust margin from the bottom */
+}
+
+.resend-button:hover {
+  color: #ff0505;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: auto; /* Maintain aspect ratio */
+  padding: 10px; /* Add padding if needed */
+  background: rgba(255, 255, 255, 0); /* Optional: Add background color with transparency */
+  border-radius: 0px; /* Optional: Add border radius */
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+/* Additional styling for "Resend in" text */
+.resend-text {
+  margin-top: 15px; /* Adjust margin from the top */
+  margin-bottom: 15px; /* Adjust margin from the bottom */
+  font-size: 14px; /* Adjust font size */
+  color: #000; /* Adjust color as needed */
+}
+
+.resend-text.active {
+  color: #ff0505;
+  text-decoration: underline;
+  cursor: pointer;
+}
