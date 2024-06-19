@@ -88,7 +88,7 @@ body {
   margin-bottom: 10px; /* Add margin bottom */
 }
 
-.signout-button {
+.signout-button, .share-button {
   background-color: white;
   color: #f44336;
   margin-top: 10px;
@@ -99,25 +99,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.signout-button:hover {
-  background-color: #d32f2f;
-  color: white;
-}
-
-/* Styling for the share button */
-.share-button {
-  background-color: white;
-  color: #f44336;
-  margin-top: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  margin-right: 10px; /* Add gap between share and sign out button */
-}
-
-.share-button:hover {
+.signout-button:hover, .share-button:hover {
   background-color: #d32f2f;
   color: white;
 }
@@ -252,7 +234,7 @@ body {
     margin: 0;
   }
 
-  .signout-button {
+  .signout-button, .share-button {
     width: auto;
     margin-top: 0;
   }
@@ -297,10 +279,23 @@ body {
 }
 
 /* Styles for the referral dialog */
+.referral-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .referral-dialog-title {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .referral-dialog-title img {
@@ -335,4 +330,9 @@ body {
 
 .referral-dialog-content .social-buttons button {
   margin: 0 10px;
+}
+
+.referral-code {
+  font-weight: bold;
+  margin-top: 10px;
 }

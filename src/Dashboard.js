@@ -166,9 +166,9 @@ const Dashboard = () => {
           ATRIA UNIVERSITY-ARPL-2024-24-ABP-01
         </Typography>
         <div className="header-buttons">
-          <Button variant="contained" color="primary" className="share-button" onClick={handleShareClick}>
+          <button className="signout-button" onClick={handleShareClick}>
             Refer a Friend!
-          </Button>
+          </button>
           <button className="signout-button" onClick={handleSignOut}>Sign Out</button>
         </div>
       </Box>
@@ -220,7 +220,7 @@ const Dashboard = () => {
           Share and Earn!
         </DialogTitle>
         <DialogContent>
-          <Typography variant="body1">Share your referral link to earn rewards:</Typography>
+          <Typography variant="body1">Share your referral code and Earn up to RS.5000 off When your friend books a solar rooftop plant using your refferal code:</Typography>
           <Typography variant="body2" className="referral-link">{referralData.referralLink}</Typography>
           <Typography variant="body2">Referral Code: {referralData.referralCode}</Typography>
           <Button variant="contained" color="primary" onClick={shareReferral} style={{ marginTop: '20px' }}>
@@ -233,7 +233,7 @@ const Dashboard = () => {
       </Dialog>
 
       <a
-        href={`https://wa.me/1234567890?text=${encodeURIComponent(`Join using my referral link: ${referralData.referralLink}`)}`}
+        href={`https://wa.me/+918904967001?text=${encodeURIComponent(`Join using my referral link: ${referralData.referralLink}`)}`}
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
